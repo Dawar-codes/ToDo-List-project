@@ -1,0 +1,71 @@
+body{
+    background-color:chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card1{
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+}
+.cardItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.taskItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+}
+
+li {
+    padding-right: 8px;
+    padding-top: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    cursor: pointer;
+    overflow-wrap: break-word; 
+    max-width: calc(100% - 40px);
+}
+.deleteButton{
+    height: 20px;
+}
+.deleteButton img{
+    height: 15px;
+}
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+#todoInput{
+    border-radius: 1rem;
+    border: none;
+    height: 1.5rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+#todoInput:focus{
+    outline-color:cadetblue;
+}
+#addButton{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
